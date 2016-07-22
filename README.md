@@ -17,11 +17,16 @@ Example cron job:
     Runs the job each night at 11:59 using todays date and logs the output into our networker applogs directory with a date formatted logfile name.
     
 ## Usage:
-  
-### -d DD-MON-YY : Supply a date (will use today if option not set) must be in RMAN format i.e. 15-JUL-16
-###  -u user : Supply the oracle OS user account (will use sidadm if option not set).
-###  -R SESSION_RECID : if a RECID is supplied a STAMP must also be supplied. 
-### -S SESSION_STAMP : With the STAMP and RECID you can get the full output of the specific job. Helpful when job status is not "COMPLETE"
+
+-s sid : Supply the sid of your Oracle DB. The only truly required option.
+
+-d DD-MON-YY : Supply a date (will use today if option not set) must be in RMAN format i.e. 15-JUL-16
+
+-u user : Supply the oracle OS user account (will use sidadm if option not set).
+
+-R SESSION_RECID : if a RECID is supplied a STAMP must also be supplied. 
+
+-S SESSION_STAMP : With the STAMP and RECID you can get the full output of the specific job. Helpful when job status is not "COMPLETE"
   
 
 
